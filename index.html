@@ -1,237 +1,84 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<!-- 	This is the "Head" of the HTML document.
-		It contains information that isn't displayed on the actual page, but is useful
-		for the web browser when loading the page	
-	-->
-	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Katlyn Hobbs - Astronomy PhD Student</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
-		-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katlyn Hobbs</title>
+  <meta name="description" content="Katlyn Hobbs is an astrophysicist at Queen's University Belfast studying stellar activity and its effect on the detection of exoplanets.">
+  <meta property="og:title" content="Katlyn Hobbs">
+  <meta property="og:description" content="Katlyn Hobbs is an astrophysicist at Queen's University Belfast studying stellar activity and its effect on the detection of exoplanets.">
+  <meta property="og:image" content="https://katlyn-hobbs.github.io/images/kate-portrait.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="index.html">Katlyn L. Hobbs</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
 
-		<!-- Global site tag (gtag.js) - Google Analytics
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W1M5NE3KFS"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <div class="layout">
+    <aside class="profile">
+      <img class="avatar" src="images/kate-portrait.jpg" alt="Photo of Katlyn Hobbs" width="180" height="180">
+      <p class="name">Katlyn L. Hobbs</p>
+      <p class="role">Astrophysicist<br>Astrophysics Research Centre<br>Queen's University Belfast<br>she/her</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.2V17h16V7.2l-8 5.3-8-5.3zM5.6 7l6.4 4.2L18.4 7H5.6z"/></svg><a href="mailto:khobbs01@qub.ac.uk">khobbs01@qub.ac.uk</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 7.3a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9zM7.6 10.3h1.4v7.1H7.6v-7.1zm3.3 0h3.1c2.4 0 3.8 1.6 3.8 3.6 0 2-1.5 3.6-3.8 3.6h-3.1v-7.2zm1.4 1.3v4.6h1.6c1.6 0 2.4-1 2.4-2.3s-.8-2.3-2.4-2.3h-1.6z"/></svg><a href="https://orcid.org/0009-0004-4519-5080">ORCID</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg><a href="https://github.com/Katlyn-Hobbs">GitHub</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8l11 5 9-4.1V15h2V8L12 3zm-6 9.2V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.8l-6 2.7-6-2.7z"/></svg><a href="https://pure.qub.ac.uk/en/persons/katlyn-hobbs/">QUB profile</a></li>
+      </ul>
+      <p class="cv-button"><a class="button" href="cv.html">View CV</a></p>
+    </aside>
 
-		gtag('config', 'G-W1M5NE3KFS');
-		</script> -->
-	</head>
-	<!-- The body is the location where your site's content will go -->
-	<body class="is-preload">
+    <main>
+      <h1>Hello, I'm Kate</h1>
 
-			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
-			<div id="wrapper">
+      <p class="lead">I'm an astrophysicist at the Astrophysics Research Centre, Queen's University Belfast. I study how magnetic activity on the Sun and other stars changes their spectra, and how to stop that activity hiding or mimicking the signals of planets.</p>
 
-					<!-- This is where the content that appears on page load exists -->
-					<header id="header">
-						<!-- This is the main content of the front page -->
-						<div class="content">
-							<div class="inner">
-								<!-- Here is a heading where you can put your name -->
-								<h1>
-									Katlyn L. Hobbs
-								</h1>
+      <p>Many exoplanets are found by measuring tiny shifts in a star's spectral lines as an orbiting planet tugs the star back and forth. Magnetic regions on the star's surface, such as dark spots and bright faculae, also shift and distort those lines. For small, Earth-like planets, the activity signal can be larger than the planet's. My work aims to measure that activity directly from the spectra so it can be separated from planetary signals.</p>
 
-								<h3>
-									Astronomy - Exoplanets - Stellar Activity
-								</h3>
-								<!-- 	Here is an image where you can put a picture of you. 
-									You can change the width and height attributes below to change how large
-									your image is.
+      <p>To do this I use Sun-as-a-star observations from four instruments: <b>HARPS-N</b>, <b>KPF</b>, <b>NEID</b> and <b>EXPRES</b>. Because we can also image the Sun's surface, we can check what we see in the spectra against what is actually there. You can read more on my <a href="research.html">research page</a>.</p>
 
-									Try adding "border-radius: 50%;" to the style attribute.
-								-->
-								<img src="images/kate.jpg" style="width:280px; height:280px; object-fit: cover;">
-								<!-- 	Here is a paragraph where you can put your position and institution, or
-									a short line about yourself.
-								-->
-								<p>
-									Pronouns: she/her
-									<br>PhD Student
-									<br>Queen's University Belfast
-								</p>
-								<!-- Here is a paragraph where you can put a link to your CV
-								<p>
-									Note you will want to change where this points to!
-									<a href="images/Astronomy.jpg" target="_blank">Curriculum Vitae</a>
-								</p>
-								-->
-							</div>
-						</div>
-						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
-							<ul>
-								<!-- This is a "List Item" -->
-								<li>
-									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
-									<a href="#about">About Me</a>
-								</li>
-								<li>
-									<a href="#research">Research</a>
-								</li>
-								<li>
-									<a href="#publications">Publications</a>
-								</li>
-								<!-- <li>
-									<a href="#outreach">Outreach</a>
-								</li> -->
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
-								<!-- <li>
-									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
-							</ul>
-						</nav>
-					</header>
+      <h2>Background</h2>
 
-					<!-- These are the "cards" that appear when you click the buttons on the main page -->
-					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
-						<article id="about">
-							<h2 class="major">About Me</h2>
-							<!-- Here are three paragraphs where you can fill out information about yourself -->
-							<p>
-								<!-- Items contained in <b> tags are bolded! -->
-								<b>Hello!</b> I'm Kate, an Astrophysics PhD student at Queen's University Belfast. I work on the mitigation of stellar activity which you can read more about <a href="#research">here.</a>
-							<!-- Here is an image that you can customize for this page -->
-							<!-- <span class="image main">
-								<img src="images/katehobbs.png" alt="Cyclist"/>
-							</span>
-							<p>
-								<b>Other interests:</b> I like books</a>.
-							</p> -->
-						</article>
+      <p>I'm completing my PhD at Queen's University Belfast with Prof. Christopher Watson and Dr Ernst de Mooij. My thesis is on <i>Modelling the Impact of Stellar Activity on the Detection of Exoplanets</i>, and I expect to finish in June 2027.</p>
 
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-							<h2 class="major">Research</h2>
-							<!-- <span class="image main">
-								<img src="images/katehobbs.png" alt=""/>
-							</span> -->
-							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								I study how magnetic activity on the Sun and other stars affects their spectra and complicates the search for exoplanets. Magnetic regions such as faculae distort spectral lines, introducing noise that can mimic or mask planetary signals in radial velocity measurements. To address this, I use Spectral Ratio Analysis (SRA), a technique that compares high- and low-activity spectra to isolate activity-driven changes. This allows me to identify which spectral lines are most sensitive to stellar activity and develop new activity indicators.
-								In <a href="https://doi.org/10.1093/mnras/stag1462">Hobbs et al. (2026)</a>, I measure faculae coverage on the Sun directly from HARPS-N Sun-as-a-star observations, and show that these measurements strongly correlate with ground-truth measurements of faculae filling factor from disc-resolved Solar Dynamics Observatory (SDO) data.
-								I am also working on using multi-instrument comparisons and novel techniques to further understand the spectral imprints of faculae and spots, with the aim to apply these findings to the mitigation of stellar activity in radial velocity measurements.
-							</p>
-						</article>
+      <p>From September 2025 to January 2026 I was a pre-doctoral fellow at the Flatiron Institute's Center for Computational Astrophysics in New York, working with Dr Megan Bedell and Dr Ryan Rubenzahl on new stellar activity indicators across four solar telescopes.</p>
 
-						<!-- Here is the "Publications" card. -->
-						<article id="publications">
-							<h2 class="major">Publications</h2>
-							<!-- <span class="image main">
-								<img src="images/katehobbs.png" alt=""/>
-							</span> -->
-							<p>
-								For a full list of publications see: <a href="https://orcid.org/0009-0004-4519-5080">ORCID</a>.
-							</p>
-							<p>
-								<b><a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.551g1462H/abstract">The Fe I 4377 Å line as a solar faculae indicator: insights from spectral ratio analysis</a></b>
-								<br><b>Katlyn L. Hobbs</b>, Christopher A. Watson, Jean C. Costes et al. 2026, MNRAS, 551, 2 <a href="https://doi.org/10.1093/mnras/stag1462">doi:10.1093/mnras/stag1462</a>
-							</p>
-						</article>
+      <p>Before my PhD I studied Engineering Physics at Queen's University in Canada. For my undergraduate thesis with Prof. Gregg Wade, I modelled the magnetic signatures of hot stars in the ultraviolet to help set the requirements for <a href="https://doi.org/10.1007/s10509-022-04140-8">Polstar</a>, a proposed NASA spectropolarimetry mission.</p>
 
-						<!-- Here is a the "Outreach" card. -->
-						<!-- <article id="outreach">
-							<h2 class="major">Outreach</h2>
-							<p> 
-								<h3><a href="https://blog.planethunters.org/author/astrosobrien/">Planet Hunters Blog Posts:</a></h3>
-								<a href="https://blog.planethunters.org/2021/10/20/more-about-planet-hunters-ngts/">More about Planet Hunters NGTS</a>
-							</p>
-						</article> -->
+      <h2>Recent talks</h2>
+      <ul>
+        <li><b>GPR V</b>, Oxford, UK &middot; September 2026</li>
+        <li><b>HORS3S</b>, Granada, Spain &middot; July 2026</li>
+        <li><b>Exoplanets 6</b>, Porto, Portugal &middot; July 2026</li>
+        <li><b>Cool Stars 23</b>, Tokyo, Japan &middot; June 2026</li>
+        <li><b>UK Exoplanet Meeting</b>, Leeds, UK &middot; April 2025</li>
+      </ul>
 
-						<!-- Here is a the "Contact" card. -->
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<p> 
-								<b>Email:</b> khobbs01(at)qub.ac.uk
-								<br><b>Address:</b> Astrophysics Research Centre, Queen's University Belfast, Belfast, BT7 1NN
-							</p>
+      <h2>Teaching and outreach</h2>
 
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
-							<ul class="icons">
-								<!-- The GitHub icon -->
-								<li>
-									<a href="https://github.com/Katlyn-Hobbs" class="icon fa-github">
-										<span class="label">GitHub</span>
-									</a>
-								</li>
-								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
+      <p>I've been a teaching assistant for Python programming, physics labs and maths for engineers. I'm treasurer of <b>ARC Equitea</b>, a group at the Astrophysics Research Centre that discusses equality, diversity and inclusion in academia, and I've helped run QUB's Astronomy Day at the Northern Ireland Science Festival.</p>
 
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
-								<!-- <li>
-									<a href="#" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li> -->
-							</ul>
-						</article>
-					</div>
+      <h2>Contact</h2>
 
-					<!-- This is the footer that appears at the bottom of the page -->
-					<footer id="footer">
-						<!-- 	You can change "Untitled" to your name to show everyone that
-							this is your work.
-						-->
-						<p class="copyright">Website Build: <a href="https://astrosites.github.io/index.html">AstroSites</a>.</p>
-						<p class="copyright">&copy; Background Image Credit: <a href="https://www.eso.org/public/images/eso0933a/">ESO/L. Cal&ccedil;ada</a></p>
-						<p class="copyright">&copy; Site Template: <a href="https://html5up.net/">HTML5 UP</a></p>
-						<p class="copyright"> <a href="https://katlyn-hobbs.github.io/sitemap.txt">Sitemap</a></p>
-					</footer>
+      <p>The best way to reach me is by email at <a href="mailto:khobbs01@qub.ac.uk">khobbs01@qub.ac.uk</a>.<br>
+      Astrophysics Research Centre, Queen's University Belfast, Belfast, BT7 1NN, UK</p>
+    </main>
+  </div>
 
-			</div>
-
-			<!--	This is the background image of the site.
-				All configuration of the background is done with CSS.
-				Look in the file assets/css/main.css and search for "#bg" to
-				see how this element is styled. Look for comments pointing 
-				to where you can set a new background image.
-			-->
-			<div id="bg"></div>
-
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer class="site-footer">
+    <div class="inner">&copy; 2026 Katlyn L. Hobbs &middot; Last updated November 2026</div>
+  </footer>
+</body>
 </html>

@@ -1,3 +1,4 @@
-https://astro-sobrien.github.io/
-https://astro-sobrien.github.io/mscthesis_gif.html
-https://astro-sobrien.github.io/sitemap.txt
+https://katlyn-hobbs.github.io/
+https://katlyn-hobbs.github.io/research.html
+https://katlyn-hobbs.github.io/publications.html
+https://katlyn-hobbs.github.io/cv.html
