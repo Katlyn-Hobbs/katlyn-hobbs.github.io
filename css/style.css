@@ -34,11 +34,22 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: #140c08;
   color: var(--text);
   font-family: var(--sans);
   font-size: 18px;
   line-height: 1.65;
+}
+
+/* Background: ESO/L. Calcada artist's impression of CoRoT-7b and its star */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(12, 7, 5, 0.35), rgba(12, 7, 5, 0.6)),
+    url("../images/starandplanet.jpg") center / cover no-repeat;
 }
 
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
@@ -60,8 +71,9 @@ main > h1:first-child, main > h2:first-child { margin-top: 0; }
 /* ---------- Header / navigation ---------- */
 
 .site-header {
-  border-bottom: 1px solid var(--line);
-  background: var(--surface);
+  background: rgba(12, 7, 5, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 .site-header .inner {
   max-width: var(--maxw);
@@ -77,26 +89,29 @@ main > h1:first-child, main > h2:first-child { margin-top: 0; }
   font-family: var(--serif);
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
 }
 .site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
 .site-nav a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
   font-size: 1rem;
   padding: 0.2rem 0;
   border-bottom: 2px solid transparent;
 }
-.site-nav a:hover { color: var(--text); }
-.site-nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--accent); }
+.site-nav a:hover { color: #fff; }
+.site-nav a[aria-current="page"] { color: #fff; border-bottom-color: #f0a27c; }
 
 /* ---------- Page layout ---------- */
 
 .layout {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 2.5rem 16px 3rem;
+  width: min(var(--maxw), calc(100% - 32px));
+  margin: 2.5rem auto;
+  padding: 2.5rem 2.5rem 3rem;
+  background: var(--bg);
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr);
   gap: 3rem;
@@ -104,7 +119,7 @@ main > h1:first-child, main > h2:first-child { margin-top: 0; }
 }
 
 @media (max-width: 820px) {
-  .layout { grid-template-columns: 1fr; gap: 2rem; padding-top: 1.5rem; }
+  .layout { grid-template-columns: 1fr; gap: 2rem; width: calc(100% - 20px); margin: 10px auto 1.5rem; padding: 1.5rem 16px 2rem; }
 }
 
 /* ---------- Profile sidebar ---------- */
@@ -215,8 +230,9 @@ figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.5rem; line-h
 /* ---------- Footer ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--line);
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.88rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
-.site-footer .inner { max-width: var(--maxw); margin: 0 auto; padding: 1.2rem 16px 2rem; }
+.site-footer a { color: #fff; }
+.site-footer .inner { max-width: var(--maxw); margin: 0 auto; padding: 0 16px 2rem; text-align: center; }
